@@ -1,0 +1,90 @@
+/*
+    Theme Name: clockwork
+    Theme URL: http://www.calibreworks.com/
+    Description: codename is child theme created from the CalibreFx Theme Framework.
+    Author: CalibreFx Team
+    Author URI: http://www.calibrefx.com
+    Version: 1.0.0
+    Template: calibrefx
+    Text Domain: Clockwork
+*/
+
+/* Typography
+------------------------------------------------------------ */
+body{
+    color: #444444;
+}
+
+body > img{
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    line-height: normal;
+}
+
+h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+h6{
+    font-size: 14px;
+}
+
+/* Hyperlinks
+------------------------------------------------------------ */
+
+a,
+a:visited {
+    color: #999999;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+/* List
+------------------------------------------------------------ */
+ul.horizontal{
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.horizontal li{
+    display: inline-block;
+    padding: 0;
+}
+
+/* Wrapper
+------------------------------------------------------------ */
+#wrapper{
+    
+}

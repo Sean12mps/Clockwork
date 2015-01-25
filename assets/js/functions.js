@@ -4,32 +4,27 @@ jQuery(document).ready(function($){
 
 	childfx.addGear({
 		name  		: 'home_test_array',
-		selector 	: '#inner',
 		locations 	: ['home','archive'],
-		func 	 	: ['display_test','display_test2']
+		func_names 	: ['display_test','display_test2']
 	});
 
 	childfx.addFunctions({
-
-			name 		: 'display_test',
-			
-			func 		: function(){
-				console.log( 'first' );
-			}
+		name 		: 'display_test',
+		selector 	: '#inner',
+		func 		: function(){
+			console.log( 'first' );
+		}
 	});
 
 	childfx.addFunctions({
-
-			name 		: 'display_test2',
-			
-			func 		: function(){
-				console.log( 'second' );
-			}
+		name 		: 'display_test2',
+		selector 	: '#inner',
+		func 		: function(){
+			console.log( 'second' );
+		}
 	});
 
 	childfx.engine( 'home_test_array' );
-
-
 
 });
 

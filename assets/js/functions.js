@@ -26,6 +26,45 @@ jQuery(document).ready(function($){
 
 	childfx.engine( 'home_test_array' );
 
+
+
+
+	childfx.addGear({
+		name  		: 'research_creating_events',
+		locations 	: ['eventcreation'],
+		func_names 	: ['creating_events']
+	});
+
+	childfx.addFunctions({
+		name 		: 'creating_events',
+		selector 	: '#inner',
+		func 		: function(){
+
+			var myText = {
+				name : 'julee',
+				func : 'serve'
+			};
+
+			$( document ).on( "clock-right", { myText: myText }, 
+				function( event, $args ) {
+					console.log(myText);
+				    var target = $( $args ).attr( 'target' );
+				    $( ''+target+'' ).text( $args.text() );
+				    myText.func = $args.text();
+				}
+			);
+			
+			$( '#right-text' ).on( 'click', function(){
+				var $elem = $( this );
+				$( document ).trigger( "clock-right" ,[ $elem ] );
+			} );
+
+
+		}
+	});
+
+	childfx.engine( 'research_creating_events' );
+
 });
 
 function check_focus(elm,val){
